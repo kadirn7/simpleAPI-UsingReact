@@ -55,7 +55,14 @@ body {
   background: #3a3a3a; /* Daha açık koyu gri arka plan */
   padding: 20px; /* İç boşluk */
   border-radius: 8px; /* Yuvarlatılmış köşeler */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Daha belirgin gölge */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+}
+
+h1 {
+  text-align: center; /* Ortalanmış başlık */
+  color: #007BFF; /* Mavi başlık rengi */
+  margin-bottom: 20px; /* Alt boşluk */
+  font-size: 2em; /* Başlık boyutu */
 }
 
 button {
@@ -86,10 +93,4 @@ input {
 h2 {
   margin-top: 20px; /* Üst boşluk */
   color: #007BFF; /* Mavi başlık rengi */
-}
-
-h1 {
-  text-align: center; /* Ortalanmış başlık */
-  color: #007BFF; /* Mavi başlık rengi */
-  margin-bottom: 20px; /* Alt boşluk */
 }
