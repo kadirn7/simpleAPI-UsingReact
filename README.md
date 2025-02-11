@@ -6,7 +6,7 @@ Bu proje, React uygulamasında API isteklerinin nasıl yönetileceğini göstere
 
 ```bash
 # Projeyi klonlayın
-git clone [https://github.com/kadirn7/ReactTemeller]
+git clone [https://github.com/kadirn7/API-UsingReact]
 
 # Proje dizinine gidin
 cd API-Using
@@ -33,6 +33,9 @@ npm run dev
 |----------|----------|
 | GET /users | Tüm kullanıcıları getirir |
 | GET /users/:id | ID'ye göre kullanıcı getirir |
+| POST /users | Yeni kullanıcı oluşturur |
+| PUT /users/:id | ID'ye göre kullanıcı günceller |
+| DELETE /users/:id | ID'ye göre kullanıcı siler |
 
 ## 🛠️ Kullanılan Teknolojiler
 
