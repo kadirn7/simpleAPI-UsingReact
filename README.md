@@ -26,6 +26,9 @@ npm run dev
 - Tüm kullanıcıları listeleme
 - ID'ye göre kullanıcı getirme
 - JSON Server ile mock API kullanımı
+- Yeni kullanıcı oluşturma
+- ID'ye göre kullanıcı güncelleme
+- ID'ye göre kullanıcı silme
 
 ## 🔍 API Endpoints
 
