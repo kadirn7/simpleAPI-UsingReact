@@ -40,3 +40,56 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  font-family: 'Arial', sans-serif; /* Modern bir font */
+  background-color: #2c2c2c; /* Koyu gri arka plan */
+  color: #e0e0e0; /* Açık gri yazı rengi */
+  margin: 0; /* Varsayılan margin kaldırıldı */
+  padding: 20px; /* İç boşluk eklendi */
+}
+
+.container {
+  max-width: 600px; /* Maksimum genişlik */
+  margin: auto; /* Ortalanmış görünüm */
+  background: #3a3a3a; /* Daha açık koyu gri arka plan */
+  padding: 20px; /* İç boşluk */
+  border-radius: 8px; /* Yuvarlatılmış köşeler */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Daha belirgin gölge */
+}
+
+button {
+  background-color: #007BFF; /* Mavi arka plan */
+  color: white; /* Beyaz yazı rengi */
+  padding: 10px 20px; /* İç boşluk */
+  border: none; /* Kenarlık yok */
+  border-radius: 5px; /* Yuvarlatılmış köşeler */
+  cursor: pointer; /* İmleç değişimi */
+  margin: 5px; /* Dış boşluk */
+  font-size: 16px; /* Yazı boyutu */
+  transition: background-color 0.3s; /* Geçiş efekti */
+}
+
+button:hover {
+  background-color: #0056b3; /* Hover durumunda daha koyu mavi */
+}
+
+input {
+  padding: 10px; /* İç boşluk */
+  margin: 5px; /* Dış boşluk */
+  border: 1px solid #ccc; /* Gri kenarlık */
+  border-radius: 5px; /* Yuvarlatılmış köşeler */
+  font-size: 16px; /* Yazı boyutu */
+  width: calc(100% - 22px); /* Genişlik ayarı */
+}
+
+h2 {
+  margin-top: 20px; /* Üst boşluk */
+  color: #007BFF; /* Mavi başlık rengi */
+}
+
+h1 {
+  text-align: center; /* Ortalanmış başlık */
+  color: #007BFF; /* Mavi başlık rengi */
+  margin-bottom: 20px; /* Alt boşluk */
+}

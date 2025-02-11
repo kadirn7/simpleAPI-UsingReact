@@ -49,7 +49,9 @@ useEffect(()=>{
 
   return (
     <>
-      <div>
+      <div className='container'>
+
+          <h1>API Kullanımı</h1>
         <button onClick={()=>getAllUsers()}>Get All Users</button>
         <input type="number" value={id} onChange={(e)=>setId(e.target.value)}/>
         <button onClick={()=>getUserById(id)}>Get User By ID</button>
