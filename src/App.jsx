@@ -12,7 +12,7 @@ function App() {
   const [updatedEmail,setUpdatedEmail]=useState('')
   const [updatedPassword,setUpdatedPassword]=useState('')
   const [deletedId,setDeletedId]=useState('')
-
+  const [postId,setPostId]=useState('')
 
     const getAllUsers= async()=>
     {
@@ -21,10 +21,7 @@ function App() {
     }
     
 
-    const getUserById= async(id)=>{
-      const response= await axios.get(`${baseUrl}/users/${id}`) //baseUrl+"/users/"+id şeklinde de yazılabilir
-      console.log('Kullanıcı adı:', response.data.email)
-    }
+    
   
     const createUser=async(newUSer)=>{
       const response= await axios.post(`${baseUrl}/users`,newUSer)
@@ -41,6 +38,27 @@ function App() {
       console.log('Kullanıcı silindi:', response.data)
     }
 
+    const getUserById= async(id)=>{
+      const response= await axios.get(`${baseUrl}/users/${id}`) //baseUrl+"/users/"+id şeklinde de yazılabilir
+      console.log('Kullanıcı adı:', response.data.email)
+    }
+    const getPostById=async(postId)=>{
+      const response= await axios.get("https://jsonplaceholder.typicode.com/posts/"+postId)
+      console.log('Post:', response.data)
+    }
+
+    const getPost=async(id)=>{
+      const Id=await axios.get(`${baseUrl}/users/${id}`)
+      const postId= await Id.data.postId
+      const response=await axios.get("https://jsonplaceholder.typicode.com/posts/"+postId)
+      console.log('Post:', response.data)
+    }
+    const getPostShort=async(id)=>{
+      const postId= await (await axios.get(`${baseUrl}/users/${id}`)).data.postId
+      
+      const response=await axios.get("https://jsonplaceholder.typicode.com/posts/"+postId)
+      console.log('Post:', response.data)
+    }
     
 useEffect(()=>{
   
@@ -75,6 +93,13 @@ useEffect(()=>{
         <input type="text" value={deletedId} placeholder='ID' onChange={(e)=>setDeletedId(e.target.value)}/>
         <button onClick={()=>deleteUser(deletedId)}>Delete User</button>
 
+        <h2>Get Post By ID</h2>
+        <input type="text" value={postId} placeholder='Post ID' onChange={(e)=>setPostId(e.target.value)}/>
+        <button onClick={()=>getPost(postId)}>Get Post By Id</button>
+
+        <h2>Get Post Short</h2>
+        <input type="text" value={postId} placeholder='Post ID' onChange={(e)=>setPostId(e.target.value)}/>
+        <button onClick={()=>getPostShort(postId)}>Get Post Short</button>
       </div>
       
     </>
