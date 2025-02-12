@@ -2,6 +2,8 @@
 
 Bu proje, React uygulamasında API isteklerinin nasıl yönetileceğini gösteren basit bir örnek uygulamadır. Axios kütüphanesi kullanılarak GET istekleri gerçekleştirilmiştir.
 
+![Uygulama Görünümü](./public/view.png)
+
 ## 🛠️ Kurulum ve Çalıştırma
 
 ```bash
