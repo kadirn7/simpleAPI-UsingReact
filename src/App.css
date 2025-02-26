@@ -94,3 +94,62 @@ h2 {
   margin-top: 20px; /* Üst boşluk */
   color: #007BFF; /* Mavi başlık rengi */
 }
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+nav {
+  background: #3a3a3a;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #007BFF;
+}
+
+.customer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.customer-card {
+  background: #3a3a3a;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.address-info {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #555;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #3a3a3a;
+  border-radius: 8px;
+}
